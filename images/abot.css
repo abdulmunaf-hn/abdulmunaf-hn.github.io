@@ -50,7 +50,7 @@ body {
 
 /*services */
 .flex-container {
-  background-colo:white;
+  background-color:white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
