@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #ffffff;
+  background: #ddd;
 }
 
 /* Navbar Styles */
@@ -48,3 +48,87 @@ body {
   color: #67cffb;
 }
 
+/*form box style*/
+.form-box {
+  padding-top:25px;
+  padding-left:20%;
+   padding-right:20%;
+   padding-bottom:25px;
+ }
+
+.form-box h3 {
+  font-size: 26px;
+  text-align: center;
+}
+.form-box p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+form input,
+textarea {
+  width: 300px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(13, 12, 12, 0.418);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color:#ddd;;
+}
+
+.form-btn {
+  width:20%;
+ display: block;
+  padding: 8px;
+  margin-left:70px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+}
+.form-btn:hover {
+  background: #2b4ebe;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  /*.content-section {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .image-section {
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }*/
+}
+
+@media (max-width: 554px) {
+  .item {
+  background-color:#F9F6C4;
+  padding: 30px;
+  margin:8px;
+  border-radius: 10px;
+  width:300px;
+  height:auto;
+
+  }}
