@@ -99,7 +99,7 @@ body {
     display: block;
     margin: auto;
   }
-  /*.content-section {
+  .content-section {
     float: none;
     width: 100%;
     display: block;
@@ -110,7 +110,7 @@ body {
     width: 100%;
     display: block;
     margin: auto;
-  }*/
+  }
 }
 @media (max-width: 554px) {
   .item {
