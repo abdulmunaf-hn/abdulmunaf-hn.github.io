@@ -69,7 +69,6 @@ body {
   .hero {
     position: relative;
     width: 100%;
-
     margin-bottom: 0px;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +88,7 @@ body {
   color:#02F5A1;
 }
 
-.hero-content h2{
+.hero-content h1 {
   color:#67cffb
 }
 .hero-content p{
