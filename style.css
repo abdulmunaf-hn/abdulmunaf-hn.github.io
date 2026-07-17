@@ -55,7 +55,7 @@ body {
   height:80%;
   display: block;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 
@@ -85,10 +85,19 @@ body {
     height: 10%;
 }
 .hero-content .role{
-  font-size: 24px;
-  
-  color:#67cffb;
+  font-size: 45px;
+  color:#02F5A1;
 }
+
+.hero-content h2{
+  color:#67cffb
+}
+.hero-content p{
+  font-size:30px
+}
+
+
+
 
 
 /*.background-img {

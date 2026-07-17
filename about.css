@@ -50,14 +50,14 @@ body {
 
 /*services */
 .flex-container {
-  background-color:white;
+  background-color:#ddd;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin:auto;
   width: 80%;
-  padding-top: 10px;
+  margin-top: 200px;
    
 }
 .flex-container .item{
