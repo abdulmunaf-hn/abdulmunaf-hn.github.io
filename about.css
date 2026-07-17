@@ -48,7 +48,7 @@ body {
   color: #67cffb;
 }
 
-/*services */
+/*services 
 .flex-container {
   background-color:#ddd;
   display: flex;
@@ -87,7 +87,7 @@ body {
 
  a{
    text-decoration: none;
- }
+ }*/
  
  @media (max-width: 768px) {
   .nav-links {
@@ -122,3 +122,13 @@ body {
   height:auto;
 
   }}
+ 
+.about{
+   margin-top: 135px;
+   margin-left:10%;
+  }
+  
+.skills{
+   margin-top: 200px;
+    margin-left:10%;
+  }
