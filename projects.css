@@ -59,6 +59,7 @@ body {
   background-color:#F9F6C4;
   border-radius:10px;
   margin:25px;
+  display:inline-block;
  } 
 
  .project-container .h2{
