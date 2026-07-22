@@ -22,7 +22,7 @@ let projectnemeinput=document.getElementById("project-neme-input")
 let projectdescription=document.getElementById("project-description")
 
 
-addprojecter=addEventListener("click",function(event){
+addprojecter.addEventListener("click",function(event){
 
   event.preventDefault()
   let div=document.createElement("div")
