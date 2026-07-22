@@ -28,10 +28,13 @@ addprojecter.addEventListener("click",function(event){
   let div=document.createElement("div")
   div.setAttribute("class","project-container")
   div.innerHTML=`<h2>${projectnemeinput.value}</h2>,
-  <h5>${projectdescription.value}</h5>,<button>Delete</button>`
+  <h5>${projectdescription.value}</h5>, <button onclick="deleteproject(event)">Delete</button>`
+         
   container.append(div)
   popupoverlay.style.display="none"
   popupbox.style.display="none"
-  
+  })
 
-})
+  function deleteproject(event){
+    event.target.parentElement.remove()//delete the divelement
+  }// parent or closesed
