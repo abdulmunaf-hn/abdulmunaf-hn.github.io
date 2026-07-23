@@ -27,8 +27,9 @@ addprojecter.addEventListener("click",function(event){
   event.preventDefault()
   let div=document.createElement("div")
   div.setAttribute("class","project-container")
-  div.innerHTML=`<h2>${projectnemeinput.value}</h2>,
-  <h5>${projectdescription.value}</h5>, <button onclick="deleteproject(event)">Delete</button>`
+  div.innerHTML=`<h2>${projectnemeinput.value}</h2>
+       <p>${projectdescription.value}</p>
+       <button onclick="deleteproject(event)">Delete</button>`
          
   container.append(div)
   popupoverlay.style.display="none"
