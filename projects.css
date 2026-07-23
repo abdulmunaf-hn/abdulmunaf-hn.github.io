@@ -49,21 +49,42 @@ body {
   color: #67cffb;
 }
  /*after the navbar*/
+
+ .head{
+  padding-top:70px;
+  justify-content: center;
+  text-align: center;
+ }
+ .second-title{
+  color: #2d2aee;
+ }
  .container{
-  padding: 100px;
+  display:flex;
+  padding-top:30px;
+  padding-left:80px;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+
+
  }
 
  .project-container{
   padding:15px;
   width:25%;
+  height: auto;
   background-color:#F9F6C4;
   border-radius:10px;
-  margin:25px;
+  margin:10px;
+
   display:inline-block;
  } 
 
  .project-container .h2{
     color:#321eb2e9;
+ }
+ .project-container p{
+  text-align: center;
  }
  .project-container button{
   background-color:rgb(13, 212, 29);
@@ -156,3 +177,27 @@ textarea {
 .cancel-btn:hover {
   background: #2b4ebe;
 }
+
+
+ @media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+   .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+ }
+@media (max-width: 554px) {
+  .project-container {
+  background-color:#F9F6C4;
+  padding: 30px;
+  margin:8px;
+  border-radius: 10px;
+  width:300px;
+  height:auto;
+
+  }}
+ 

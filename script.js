@@ -39,3 +39,28 @@ addprojecter.addEventListener("click",function(event){
   function deleteproject(event){
     event.target.parentElement.remove()//delete the divelement
   }// parent or closesed
+
+ ///trying to save in local storage
+  let storedItem =localStorage.getItem("storedItem")
+
+  function save(){
+      var Item =document.getElementById("project-neme-input")
+     
+      
+       localStorage.setItem("storedItem", Item)
+       Document.getElementById("")
+         
+  }
+  function get(){
+    localStorage.getItem("storedItem")
+    
+  }
+
+  //submit_btn create popup
+  let submitpopup = document.querySelector(".submit-popup")
+  let submitbutton = document.querySelector("submit-btn")
+
+  function submitpopup(){
+  submitpopup.classList.add
+  }
+  

@@ -100,10 +100,7 @@ h1{
     gap: 1rem;
   }
 
-  .container {
-    width: 80%;
-    display: block;
-    margin: auto;
+  
   }
   .content-section {
     float: none;
@@ -112,7 +109,7 @@ h1{
     margin: auto;
   }
   
-}
+
 @media (max-width: 554px) {
   .item {
   background-color:#F9F6C4;

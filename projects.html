@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"  />
     <link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body onload="get()">
        <!--nav bar start-->      
     <nav class="navbar">
          <div class="portfolio">portfolio</div>
@@ -20,7 +20,16 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-      
+
+
+    <!-- after the navbar-->
+   <div class="head">
+    <h2 class="title">I Make Incredible</h2>
+    <h2 class="second-title">Projects</h2>
+   </div>
+   <hr>
+
+<!--container start-->
     <div class="container">
         
          <div class="project-container">
@@ -29,6 +38,9 @@
              <p>Technologies used to HTML,CSS,Javascript,Figma</p>
              <button onclick="deleteproject(event)">Delete</button>
          </div>
+
+
+           <button class="add-btn" id="add-popup-btn" onclick="save()">Add Project</button>
     </div>
 
      <div class="popup-overlay">
@@ -45,9 +57,12 @@
      </div>
      </div>
 
+      <div class="submit-popup">
+        <p>Your project is successfully Added</p>
+        <button class="ok">Close</button>
 
-    <button class="add-btn" id="add-popup-btn">Add Project</button>
-
+      </div>
+    
 
     <script src="script.js"></script>
 </body>
