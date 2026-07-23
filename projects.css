@@ -177,6 +177,10 @@ textarea {
 .cancel-btn:hover {
   background: #2b4ebe;
 }
+.submit-popup{
+  display:none;
+
+}
 
 
  @media (max-width: 768px) {
