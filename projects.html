@@ -1,17 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-page</title>
-     <script src="https://kit.fontawesome.com/b713ff0a1e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"  />
-    <link rel="stylesheet" href="projects.css">
-</head>
-<body onload="get()">
-       <!--nav bar start-->      
+    <script
+      src="https://kit.fontawesome.com/b713ff0a1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body onload="get()">
+    <!--nav bar start-->
     <nav class="navbar">
-         <div class="portfolio">portfolio</div>
+      <div class="portfolio">portfolio</div>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -21,49 +27,66 @@
       </ul>
     </nav>
 
-
     <!-- after the navbar-->
-   <div class="head">
-    <h2 class="title">I Make Incredible</h2>
-    <h2 class="second-title">Projects</h2>
-   </div>
-   <hr>
+    <div class="head">
+      <h2 class="title">I Make Incredible</h2>
+      <h2 class="second-title">Projects</h2>
+    </div>
+    <hr />
 
-<!--container start-->
+    <!--container start-->
     <div class="container">
-        
-         <div class="project-container">
-             <h2>saloon<br> Website</h2>
-             
-             <p>Technologies used to HTML,CSS,Javascript,Figma</p>
-             <button onclick="deleteproject(event)">Delete</button>
-         </div>
+      <div class="project-container">
+        <h2>
+          saloon<br />
+          Website
+        </h2>
 
+        <p>Technologies used to HTML,CSS,Javascript,Figma</p>
+        <button onclick="deleteproject(event)">Delete</button>
+      </div>
 
-           <button class="add-btn" id="add-popup-btn" onclick="save()">Add Project</button>
+      <button class="add-btn" id="add-popup-btn" onclick="save()">
+        Add Project
+      </button>
     </div>
 
-     <div class="popup-overlay">
-     <div class="popup-box">
-         <h2 >Your Project</h2>
-         <form>
-            <label for="p-name"> Project Name</label>
-            <input id="project-neme-input" type="text" name="p-name" placeholder="Enter your Project Name">
-             <label for="decription">Technologies Used</label>
-            <textarea id="project-description" name="message" style="width:390px; height:100px;" placeholder="Enter Your Description"></textarea>
-            <button class="submit-btn" type ="submit" name="submit" onclick="submitpopup()" >Submit</button>
-            <button class="cancel-btn" type="">Cancel</button>
-         </form>
-     </div>
-     </div>
-
-      <div class="submit-popup">
-        <p>Your project is successfully Added</p>
-        <button class="ok" onclick="closepopup()">Close</button>
-
+    <div class="popup-overlay">
+      <div class="popup-box">
+        <h2>Your Project</h2>
+        <form>
+          <label for="p-name"> Project Name</label>
+          <input
+            id="project-neme-input"
+            type="text"
+            name="p-name"
+            placeholder="Enter your Project Name"
+          />
+          <label for="decription">Technologies Used</label>
+          <textarea
+            id="project-description"
+            name="message"
+            style="width: 390px; height: 100px"
+            placeholder="Enter Your Description"
+          ></textarea>
+          <button
+            class="submit-btn"
+            type="submit"
+            name="submit"
+            onclick="submitpopup()"
+          >
+            Submit
+          </button>
+          <button class="cancel-btn" type="">Cancel</button>
+        </form>
       </div>
-    
+    </div>
+
+    <div class="submit-popup">
+      <p>Your project is successfully submited</p>
+      <button class="ok" onclick="closepopup()">Close</button>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
