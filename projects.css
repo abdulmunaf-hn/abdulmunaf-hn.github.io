@@ -86,7 +86,7 @@ body {
   text-align: center;
 }
 .project-container button {
-  background-color: rgb(13, 212, 29);
+  background-color: rgb(253, 2, 2);
   color: black;
   border-radius: 10px;
   padding: 5px;
@@ -172,7 +172,8 @@ textarea {
   .nav-links {
     gap: 1rem;
   }
-  /*.container {
+}
+/*.container {
     width: 80%;
     display: block;
     margin: auto;
