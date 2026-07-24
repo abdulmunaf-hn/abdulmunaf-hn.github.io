@@ -104,6 +104,10 @@ body {
   right: 30px;
   top: 80px;
 }
+
+.add-btn:hover{
+  background:#48f056
+}
 .popup-overlay {
   background-color: black;
   opacity: 0.8;
@@ -165,7 +169,26 @@ textarea {
   background: #2b4ebe;
 }
 .submit-popup {
-  display: none;
+    background-color: white;
+   
+  width: 25%;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  z-index: 2;
+  display:none;
+  
+}
+.submit-popup button{
+right:5%;
+bottom:10%;
+
+}
+.submit-popup.show {
+  
+  display: block;
 }
 
 @media (max-width: 768px) {

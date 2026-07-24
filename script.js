@@ -2,46 +2,43 @@ let popupoverlay = document.querySelector(".popup-overlay");
 let popupbox = document.querySelector(".popup-box");
 let addpopupbutton = document.getElementById("add-popup-btn");
 
-addpopupbutton.addEventListener("click", function(){
-  popupoverlay.style.display="block"
-  popupbox.style.display="block"
-})
+addpopupbutton.addEventListener("click", function () {
+  popupoverlay.style.display = "block";
+  popupbox.style.display = "block";
+});
 
-let cancelbutton = document.querySelector(".cancel-btn")
-cancelbutton.addEventListener("click",function(event){
-    event.preventDefault()
- popupoverlay.style.display="none"
-  popupbox.style.display="none"
-
-})
+let cancelbutton = document.querySelector(".cancel-btn");
+cancelbutton.addEventListener("click", function (event) {
+  event.preventDefault();
+  popupoverlay.style.display = "none";
+  popupbox.style.display = "none";
+});
 
 //select container,submit-btn,project-name-input,project-description
-let container=document.querySelector(".container")
-let addprojecter=document.querySelector(".submit-btn")
-let projectnemeinput=document.getElementById("project-neme-input")
-let projectdescription=document.getElementById("project-description")
+let container = document.querySelector(".container");
+let addprojecter = document.querySelector(".submit-btn");
+let projectnemeinput = document.getElementById("project-neme-input");
+let projectdescription = document.getElementById("project-description");
 
-
-addprojecter.addEventListener("click",function(event){
-
-  event.preventDefault()
-  let div=document.createElement("div")
-  div.setAttribute("class","project-container")
-  div.innerHTML=`<h2>${projectnemeinput.value}</h2>
+addprojecter.addEventListener("click", function (event) {
+  event.preventDefault();
+  let div = document.createElement("div");
+  div.setAttribute("class", "project-container");
+  div.innerHTML = `<h2>${projectnemeinput.value}</h2>
        <p>${projectdescription.value}</p>
-       <button onclick="deleteproject(event)">Delete</button>`
-         
-  container.append(div)
-  popupoverlay.style.display="none"
-  popupbox.style.display="none"
-  })
+       <button onclick="deleteproject(event)">Delete</button>`;
 
-  function deleteproject(event){
-    event.target.parentElement.remove()//delete the divelement
-  }// parent or closesed
-/*
- ///trying to save in local storage
-  let storedItem =localStorage.getItem("storedItem")
+  container.append(div);
+  popupoverlay.style.display = "none";
+  popupbox.style.display = "none";
+});
+
+function deleteproject(event) {
+  event.target.parentElement.remove(); //delete the divelement
+} // parent or closesed
+
+///trying to save in local storage
+/*let storedItem =localStorage.getItem("storedItem")
 
   function save(){
       var Item =document.getElementById("project-neme-input")
@@ -55,18 +52,29 @@ addprojecter.addEventListener("click",function(event){
     localStorage.getItem("storedItem")
     
   }
+ 
+//submit_btn create popup
+let secondpopup = document.getElementById("seconnd-popup");
+let submitbtn = document.getElementById("submit-btn");
 
-  \\submit_btn create popup
-  let submitpopup = document.querySelector(".submit-popup")
-  let submitbutton = document.querySelector("submit-btn")
+function openpopup() {
+  submitpopup.idList.add("open-popup");
+  submitpopup.style.display = "none";
+}
 
-  function submitpopup(){
-  submitpopup.classList.add("submit-popup")
-  submitbutton.style.display="none"
-  }
+function closepopup() {
+  submitpopup.classList.remove("open-popup");
+  submitpopup.style.display = "block";
+}
+*/
 
-  function closepopup(){
-    submitpopup.classList.remove("submit-popup")
-     submitbutton.style.display="block"
-  }
-  */
+let openBtn = document.getElementById("open");
+let secondpopup = document.getElementById("second-popup");
+let closeBtn = document.getElementById("close");
+
+openBtn.addEventListener("click", () => {
+  secondpopup.classList.add("show");
+});
+closeBtn.addEventListener("click", () => {
+  secondpopup.classList.remove("show");
+});
