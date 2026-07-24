@@ -69,12 +69,12 @@ function closepopup() {
 */
 
 let openBtn = document.getElementById("open");
-let secondpopup = document.getElementById("second-popup");
+let addcontainer = document.querySelector(".add-container");
 let closeBtn = document.getElementById("close");
 
 openBtn.addEventListener("click", () => {
-  secondpopup.classList.add("show");
+  addcontainer.classList.add("show");
 });
 closeBtn.addEventListener("click", () => {
-  secondpopup.classList.remove("show");
+  addcontainer.classList.remove("show");
 });
