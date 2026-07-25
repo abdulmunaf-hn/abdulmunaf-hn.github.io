@@ -2,7 +2,7 @@ let popupoverlay = document.querySelector(".popup-overlay");
 let popupbox = document.querySelector(".popup-box");
 let addpopupbutton = document.getElementById("add-popup-btn");
 
-addpopupbutton.addEventListener("click", function () {
+addpopupbutton.addEventListener("click", function (event) {
   popupoverlay.style.display = "block";
   popupbox.style.display = "block";
 });
@@ -78,3 +78,19 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   addcontainer.classList.remove("show");
 });
+
+//home-page cv button
+const btn = document.getElementById("cvbtn");
+
+btn.addEventListener("click", () => {
+  alet("hii");
+});
+
+function cvalert(msg) {
+  alert(msg);
+}
+
+//contact sendmsg button
+function sendbutton(msg) {
+  alert(msg);
+}

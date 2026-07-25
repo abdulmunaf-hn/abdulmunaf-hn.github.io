@@ -26,14 +26,14 @@
      <div class="form-box">
         <h3>Let's Get In Touch! </h3>
         <p><b>If you need help or have a question, I'm here for you.</b><br> Fill in the form below and I'll get back to you soon</p>
-        <form action="/action_page.php">
+        <form >
             <label for="name">Name</label>
             <input type="text" name="name" placeholder="Enter your name">
             <label for="email">Email</label>
             <input type ="email" name="email" required  placeholder="Enter your email">
             <label for="message">Type your message</label>
             <textarea name="message" style="width:350px; height:100px;" placeholder="Your message..."></textarea>
-            <input class="form-btn" type ="submit" name="submit" value="Send" >
+            <button class="form-btn" id="sendbtn" value="Send" onclick="sendbutton('Your message is sent.')" >Send</button>
             
         </form>
      </div>
@@ -90,6 +90,6 @@
 
           </div>
        </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
