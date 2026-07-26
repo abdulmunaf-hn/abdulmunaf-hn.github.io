@@ -37,37 +37,6 @@ function deleteproject(event) {
   event.target.parentElement.remove(); //delete the divelement
 } // parent or closesed
 
-///trying to save in local storage
-/*let storedItem =localStorage.getItem("storedItem")
-
-  function save(){
-      var Item =document.getElementById("project-neme-input")
-     
-      
-       localStorage.setItem("storedItem", Item)
-       Document.getElementById("")
-         
-  }
-  function get(){
-    localStorage.getItem("storedItem")
-    
-  }
- 
-//submit_btn create popup
-let secondpopup = document.getElementById("seconnd-popup");
-let submitbtn = document.getElementById("submit-btn");
-
-function openpopup() {
-  submitpopup.idList.add("open-popup");
-  submitpopup.style.display = "none";
-}
-
-function closepopup() {
-  submitpopup.classList.remove("open-popup");
-  submitpopup.style.display = "block";
-}
-*/
-
 let openBtn = document.getElementById("open");
 let addcontainer = document.querySelector(".add-container");
 let closeBtn = document.getElementById("close");
@@ -80,7 +49,6 @@ closeBtn.addEventListener("click", () => {
 });
 
 //home-page cv button
-
 
 function cvalert(msg) {
   alert(msg);
