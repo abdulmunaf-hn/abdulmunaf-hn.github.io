@@ -80,11 +80,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 //home-page cv button
-const btn = document.getElementById("cvbtn");
 
-btn.addEventListener("click", () => {
-  alet("hii");
-});
 
 function cvalert(msg) {
   alert(msg);
